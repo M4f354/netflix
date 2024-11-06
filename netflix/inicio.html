@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="inicio.css">
+
+    <link rel="icon" href="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-circle-png.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Netflix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="inicio">Inicio</a></li>
+                <li><a href="#" id="peliculas">Películas</a></li>
+                <li><a href="#" id="series">Series</a></li>
+                <li>
+                    <button id="searchButton">🔍</button>
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div id="contenido">
+
+        <!-- SERIES -->
+        <section class="series">
+            <h2>Series populares</h2>
+            <div class="section-row">
+                <div class="serie" data-title="Monstruos: La historia de Lyle y Erik Menendez" 
+                data-description="La historia sigue a Lyle y Erik Menéndez, dos hermanos que asesinaron a sus padres en su hogar de Beverly Hill en 1989. Durante sus juicios, donde obtuvieron mucha fama, los hermanos alegaron que sufrieron abuso durante muchos años y por eso decidieron terminar con la vida de sus padres." data-trailer="https://youtu.be/APZhIJGQ7mM" data-genre="Drama">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAVuTG8qozm9YNfg0w97aHkhsOfVNJE4hSjQ&s" alt="Monstruos">
+                </div>
+                <div class="serie" data-title="Accidente" data-description="Un trágico accidente cambia radicalmente la vida de varias familias, desencadenando una terrible espiral de culpa, resentimiento y violencia, que los llevará a explorar los límites más extremos del dolor, la resistencia y la misericordia." data-trailer="https://www.youtube.com/watch?v=3y1t25LUJ-g" data-genre="Suspenso">
+                    <img src="https://es.web.img3.acsta.net/img/8c/e7/8ce734b16616217ca460d902c8cca013.jpg" alt="Accidente">
+                </div>
+                <div class="serie" data-title="Machos alfa" data-description="En plena crisis de masculinidad, cuatro amigos cuestionan sus privilegios y su identidad, mientras intentan adaptarse a los cambios de época." data-trailer="https://www.youtube.com/watch?v=trailer3" data-genre="Comedia">
+                    <img src="https://www.formulatv.com/images/series/posters/2800/2892/1_m3.jpg" alt="Machos Alfa">
+                </div>
+                <div class="serie" data-title="Emily en París" data-description="Emily en París sigue a Emily Cooper, una estadounidense de Chicago con un máster en comunicaciones, que se muda a París en busca de una nueva oportunidad laboral . Su tarea es aportar un punto de vista estadounidense y presencia en las redes sociales a una respetable empresa de marketing francesa." data-trailer="https://www.youtube.com/watch?v=HvYcfmPPows" data-genre="Romance">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlo3wtJzzO-QprVEAHXJ9kB6vEYIZnwfc6Jw&s" alt="Emily en París">
+                </div>
+            </div>
+        </section>
+
+        <!-- PELÍCULAS -->
+        <section class="movies">
+            <h2>Películas populares</h2>
+            <div class="section-row">
+                <div class="movie" data-title="Amor de calendario" data-description="Cansados de estar solteros en vacaciones, dos extraños acuerdan ser los más platónicos el uno del otro durante todo el año, solo para captar sentimientos reales en el camino." data-trailer="https://www.youtube.com/watch?v=AoC9VIy_b38" data-genre="Romance">
+                    <img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2020/10/w1280/zrrVDbl02FKuGoinanB0Y1aBr5W.jpg" alt="Amor de calendario">
+                </div>
+                <div class="movie" data-title="Enola Holmes 2" data-description="Enola Holmes asume su primer caso como detective, pero para desentrañar el misterio de una niña desaparecida necesitará la ayuda de sus amigos y de su hermano, Sherlock." data-trailer="https://www.youtube.com/watch?v=ws63oBLCuNk" data-genre="Aventura">
+                    <img src="https://pics.filmaffinity.com/Enola_Holmes_2-610930550-large.jpg" alt="Enola Holmes 2">
+                </div>
+                <div class="movie" data-title="Fractura" data-description="Después de que su esposa y su hija herida desaparecen de la sala de emergencias, un hombre se convence de que el hospital está ocultando algo." data-trailer="https://www.youtube.com/watch?v=dEw_cB2_7Rk" data-genre="Thriller">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxkYgRv27hkvtiXEtrWbSV8cVdnDH3JYq4_w&s" alt="Fractura">
+                </div>
+                <div class="movie" data-title="Sin novedad en el frente" data-description="Paul, de 17 años, se une al Frente Occidental en la Primera Guerra Mundial, pero su entusiasmo inicial se ve truncado por la sombría realidad de la vida en las trincheras." data-trailer="https://www.youtube.com/watch?v=EBk1lXQ7rcY" data-genre="Bélico">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSak9FwpA3IRnmOt3J0_4G4G-T0bnaBiy9o0A&s" alt="Sin novedad en el frente">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- MODAL PARA DETALLES -->
+    <div id="description-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p><strong>Género:</strong> <span id="modal-genre"></span></p>
+            <a id="modal-trailer" target="_blank">Ver Tráiler</a>
+        </div>
+    </div>
+
+    <script src="inicio.js"></script>
+</body>
+</html>

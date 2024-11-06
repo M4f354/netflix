@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+  }
+  
+  .profiles-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .profiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .profile {
+    cursor: pointer;
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0%;
+    border: 2px solid #fff;
+  }
+  
